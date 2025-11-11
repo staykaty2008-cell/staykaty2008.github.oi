@@ -1,0 +1,270 @@
+/* Hero Section para Contacto */
+.hero-contacto {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/img1.gif') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 20px;
+    font-size: 3rem;
+}
+/* Sección Sobre Nosotras */
+.sobre-nosotras {
+    padding: 80px 0;
+    background-color: rgb(191, 245, 231);
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #07251f;
+}
+
+.sobre-img {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.sobre-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sección Sobre el Proyecto */
+.sobre-proyecto {
+    padding: 80px 0;
+    background-color: #e0ffcf;
+}
+
+.proyecto-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.proyecto-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.proyecto-text ul {
+    margin: 25px 0;
+    padding-left: 20px;
+}
+
+.proyecto-text li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    position: relative;
+    padding-left: 10px;
+}
+
+.proyecto-text li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.proyecto-text strong {
+    color: var(--primary-color);
+}
+
+/* Sección Agradecimientos */
+.agradecimientos {
+    padding: 80px 0;
+    background-color: rgb(197, 248, 232);
+}
+
+.agradecimientos-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.agradecimiento-item {
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.agradecimiento-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
+}
+
+.agradecimiento-item.principal {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    grid-column: 1 / -1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.agradecimiento-item.principal .agradecimiento-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.agradecimiento-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.agradecimiento-item h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.agradecimiento-item.principal h3 {
+    color: white;
+}
+
+.agradecimiento-item p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.agradecimiento-item.principal p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Sección Contacto Simple */
+.contacto-simple {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contacto-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.contacto-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-item i {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.contacto-item h4 {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.contacto-item p {
+    color: #666;
+    margin: 0;
+}
+
+/* Footer Simplificado */
+.footer-simple {
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sobre-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .sobre-img {
+        order: -1;
+    }
+    
+    .agradecimientos-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .agradecimiento-item.principal {
+        grid-column: 1;
+    }
+    
+    .contacto-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .hero-contacto {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .sobre-nosotras,
+    .sobre-proyecto,
+    .agradecimientos,
+    .contacto-simple {
+        padding: 60px 0;
+    }
+    
+    .agradecimiento-item {
+        padding: 20px;
+    }
+    
+    .contacto-item {
+        padding: 20px;
+    }
+}

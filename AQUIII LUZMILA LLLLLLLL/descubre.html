@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre - GO! VINTO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="descubre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>GO! <span>VINTO</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descubre.html" class="active">Descubre</a></li>
+                    <li><a href="gastronomia.html">Gastronomía</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-descubre">
+        <div class="hero-content">
+            <h1>Descubre Vinto</h1>
+            <p>Explora los lugares más emblemáticos de nuestro municipio</p>
+        </div>
+    </section>
+
+    <!-- Buscador -->
+    <section class="buscador-section">
+        <div class="container">
+            <div class="buscador-container">
+                <div class="buscador-box">
+                    <input type="text" id="buscador" placeholder="Buscar lugares...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 3 Lugares -->
+    <section class="top-lugares">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top 3 Lugares</h2>
+                <p>Los sitios más visitados de Vinto</p>
+            </div>
+            <div class="top-grid">
+                <div class="top-card" data-id="1">
+                    <div class="top-badge">#1</div>
+                    <div class="top-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9e/26/fa/en-el-parque-ecoturistico.jpg?w=900&h=500&s=1" alt="Parque Ecoturístico Pairumani">
+                    </div>
+                    <div class="top-content">
+                        <h3>Parque Ecoturístico Pairumani</h3>
+                        <p>Ubicado en Vinto, este parque natural ofrece un hermoso paisaje lleno de árboles, senderos y riachuelos. Fue parte de la antigua Hacienda de Simón I. Patiño y hoy es un lugar ideal para caminar, acampar o disfrutar de la naturaleza con la familia.</p>
+                        <button class="btn ver-mas-btn">Ver más</button>
+                    </div>
+                </div>
+                <div class="top-card" data-id="2">
+                    <div class="top-badge">#2</div>
+                    <div class="top-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9e/26/f9/durante-la-epoca-de-lluvias.jpg?w=900&h=500&s=1" alt="Cascada de Pairumani">
+                    </div>
+                    <div class="top-content">
+                        <h3>Cascada de Pairumani</h3>
+                        <p>Situada dentro del Parque Ecoturístico Pairumani.</p>
+                        <button class="btn ver-mas-btn">Ver más</button>
+                    </div>
+                </div>
+                <div class="top-card" data-id="3">
+                    <div class="top-badge">#3</div>
+                    <div class="top-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/63/80/06/frontis-principal-de.jpg?w=1200&h=1200&s=1" alt="Villa Albina">
+                    </div>
+                    <div class="top-content">
+                        <h3>Villa Albina</h3>
+                        <p>Disfruta de vistas panorámicas impresionantes del Villa Albina y sus alrededores.</p>
+                        <button class="btn ver-mas-btn">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Todos los Lugares -->
+    <section class="todos-lugares">
+        <div class="container">
+            <div class="section-title">
+                <h2>Todos los Lugares</h2>
+                <p>Explora todos los atractivos turísticos de Vinto</p>
+            </div>
+            <div class="lugares-grid" id="lugares-grid">
+                <!-- Lugar 1 -->
+                <div class="lugar-card" 
+                     data-nombre="Parque Ecoturístico Pairumani"
+                     data-imagen="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9e/26/fa/en-el-parque-ecoturistico.jpg?w=900&h=500&s=1"
+                     data-descripcion="El Parque Ecoturístico Pairumani de Vinto es el corazón de la ciudad, un espacio verde perfecto para relajarse, pasear y disfrutar de la naturaleza. Con áreas de juegos infantiles, bancos para descansar y hermosos jardines, es el lugar ideal para familias y visitantes que buscan un momento de tranquilidad."
+                     data-horario="Abierto todos los días de 08:00 a 17:00."
+                     data-entrada="Costo de 5bs a 10bs"
+                     data-ubicacion="Anocaraire - Pairumani"
+                     data-maps="https://maps.app.goo.gl/mP3B5VtSEmYnuDUu8?g_st=aw">
+                    <div class="lugar-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9e/26/fa/en-el-parque-ecoturistico.jpg?w=900&h=500&s=1" alt="Parque Ecoturístico Pairumani">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Parque Ecoturístico Pairumani</h3>
+                        <p>El corazón de Vinto, un espacio perfecto para relajarse y disfrutar de la naturaleza.</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 2 -->
+                <div class="lugar-card" 
+                     data-nombre="Cascada de Pairumani"
+                     data-imagen="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9e/26/f9/durante-la-epoca-de-lluvias.jpg?w=900&h=500&s=1"
+                     data-descripcion="Situada dentro del Parque Ecoturístico Pairumani, esta cascada es uno de los rincones más visitados de Vinto. Sus aguas cristalinas y el entorno natural de bosques y montañas la convierten en un destino ideal para relajarse y tomar fotografías."
+                     data-horario="Abierta todos los días de 08:00 a 17:00 (dependiendo del clima)."
+                     data-entrada="Bs. 10 (Adultos), Bs. 5 (Niños y estudiantes)"
+                     data-ubicacion="Combuyo - Pairumani"
+                     data-maps="https://maps.app.goo.gl/FANbA7jhFL6TwAMZ9?g_st=aw">
+                    <div class="lugar-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9e/26/f9/durante-la-epoca-de-lluvias.jpg?w=900&h=500&s=1" alt="Cascada de Pairumani">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Cascada de Pairumani</h3>
+                        <p>Conoce lo hermoso de la naturaleza.</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 3 -->
+                <div class="lugar-card" 
+                     data-nombre="Villa Albina"
+                     data-imagen="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/63/80/06/frontis-principal-de.jpg?w=1200&h=1200&s=1"
+                     data-descripcion="El Villa Albina ofrece una de las vistas más espectaculares de Vinto y sus alrededores. Desde este punto elevado, los visitantes pueden admirar el valle en toda su extensión, especialmente durante el atardecer cuando los colores del cielo crean un espectáculo inolvidable."
+                     data-horario="Martes a viernes: 09:00–14:00
+                                      Sábados y domingos: 09:00–12:00"
+                     data-entrada="5bs a 8bs"
+                     data-ubicacion="Desde Vinto centro, por la carretera hacia Pairumani, en vehículo o minibús."
+                     data-maps="https://maps.app.goo.gl/vuTX2vS85bwG2pzK8?g_st=aw">
+                    <div class="lugar-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/63/80/06/frontis-principal-de.jpg?w=1200&h=1200&s=1" alt="Villa Albina">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Villa Albina</h3>
+                        <p>Villa Albina es una elegante mansión construida por Simón I. Patiño en Pairumani (Vinto). Hoy funciona como museo y espacio cultural, rodeada de jardines y arquitectura europea, ideal para conocer historia y arte del valle..</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 4 -->
+                <div class="lugar-card" 
+                     data-nombre="Anocaraire"
+                     data-imagen="https://somosdevinto.wordpress.com/wp-content/uploads/2024/06/cropped-img_20240618_100912_076.jpg"
+                     data-descripcion="Anocaraire es una comunidad rural ubicada al norte del municipio de Vinto, en el departamento de Cochabamba. Es conocida por su rica producción agrícola, especialmente flores, plantas ornamentales y hortalizas. Cada año organiza ferias como la “Feria de las Flores, Chillijchi y la Comida de Antaño”, que destaca por mostrar tradición, gastronomía local y oferta floral."
+                     data-horario="Abierta al público todo el día. Las ferias y eventos especiales normalmente se desarrollan durante el día, recomendablemente por la mañana."
+                     data-entrada="Gratuita"
+                     data-ubicacion="Desde el centro de Vinto, tomar la carretera hacia el norte (aproximadamente 17 km) hasta llegar a Anocaraire."
+                     data-maps="https://maps.app.goo.gl/CpEKr3zxG4q34vKy7">
+                    <div class="lugar-img">
+                        <img src="https://somosdevinto.wordpress.com/wp-content/uploads/2024/06/cropped-img_20240618_100912_076.jpg" alt="Anocaraire">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Anocaraire</h3>
+                        <p>Es conocida por su rica producción agrícola, especialmente flores, plantas ornamentales y hortalizas.</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 5 -->
+                <div class="lugar-card" 
+                     data-nombre="Hospital Municipal de Vinto"
+                     data-imagen="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpGtxQMbl1MRxtPggThAN28imktA4BaRhMA&s"
+                     data-descripcion="
+                     data-entrada="Gratuita="El Hospital Municipal de Vinto es el principal centro de salud del municipio, brindando atención médica general, urgencias y servicios especializados. Es un punto clave para la comunidad y visitantes que requieren asistencia sanitaria."
+                     data-ubicacion="Se encuentra en el centro de Vinto, cerca de la plaza principal, accesible a pie o en transporte público."
+                     data-maps="https://maps.app.goo.gl/G2KFS12TqLeFqQHP7">
+                    <div class="lugar-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpGtxQMbl1MRxtPggThAN28imktA4BaRhMA&s" alt="Hospital Municipal de Vinto">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Hospital Municipal de Vinto</h3>
+                        <p>Lugar del Hospital Municipal de Vinto.</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 6 -->
+                <div class="lugar-card" 
+                     data-nombre="Pico Tunari"
+                     data-imagen="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/eb/68/5c/tunari.jpg?w=900&h=-1&s=1"
+                     data-descripcion="El Pico Tunari, con más de 5 000 m s.n.m., es la montaña emblemática de Cochabamba. Ideal para trekking y turismo de aventura, desde su cima se aprecian vistas espectaculares del valle, lagunas y la fauna andina."
+                     data-entrada="Gratis"
+                     data-ubicacion="Se recomienda iniciar la excursión temprano por la mañana, ya que no tiene horario de apertura."
+                     data-maps="https://maps.app.goo.gl/Z5Z9mUY6cEmsiimj9?g_st=aw">
+                    <div class="lugar-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/eb/68/5c/tunari.jpg?w=900&h=-1&s=1" alt="Pico Tunari">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Pico Tunari</h3>
+                        <p>Desde Cochabamba, tomar la ruta hacia Quillacollo y luego el Parque Nacional Tunari. Se recomienda ir con guía local para mayor seguridad.</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 7 -->
+                <div class="lugar-card" 
+                     data-nombre="Alcaldía de Vinto"
+                     data-imagen="https://www.defensoria.gob.bo/uploads/images/5fd876acfd3d51a446130b1d0cfc50e4.jpeg"
+                     data-descripcion="La Alcaldía de Vinto es el centro administrativo del municipio y un punto de referencia para los visitantes. Su arquitectura moderna y su ubicación céntrica facilitan el acceso a servicios municipales y oficinas de atención al público. Es un lugar clave para conocer la organización y gestión del municipio."
+                     data-horario="Abierta de lunes a viernes, 08:00 a 17:00."
+                     data-entrada="Se encuentra en el centro de Vinto, frente a la plaza principal, accesible a pie o en transporte público local."
+                     data-ubicacion="Vinto"
+                     data-maps="https://maps.app.goo.gl/zHukyhbYANpN4dLh6?g_st=aw">
+                    <div class="lugar-img">
+                        <img src="https://www.defensoria.gob.bo/uploads/images/5fd876acfd3d51a446130b1d0cfc50e4.jpeg" alt="Alcaldía de Vinto">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Alcaldía de Vinto</h3>
+                        <p>Epicentro de actividades artísticas y culturales con talleres todo el año.</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 8 -->
+                <div class="lugar-card" 
+                     data-nombre="Mercado Evo Morales Ayma"
+                     data-imagen="https://www.opinion.com.bo/asset/thumbnail,992,558,center,center/media/opinion/images/2019/08/20/2019N299001.jpg"
+                     data-descripcion="El Mercado Evo Morales Ayma es uno de los principales centros de comercio de Vinto. Aquí se encuentra una gran variedad de productos locales: frutas, verduras, artesanías y alimentos típicos. Es un lugar ideal para conocer la cultura y tradiciones del municipio a través de su gente y sus sabores."
+                     data-horario="Abierto todos los días de 06:00 a 18:00."
+                     data-entrada="Gratis"
+                     data-ubicacion="Avenida Recreativa #321"
+                     data-maps="https://goo.gl/maps/example8">
+                    <div class="lugar-img">
+                        <img src="https://www.opinion.com.bo/asset/thumbnail,992,558,center,center/media/opinion/images/2019/08/20/2019N299001.jpg" alt="Mercado Evo Morales Ayma">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Mercado Evo Morales Ayma</h3>
+                        <p> Aquí se encuentra una gran variedad de productos locales: frutas, verduras, artesanías y alimentos típicos. Es un lugar ideal para conocer la cultura y tradiciones del municipio a través de su gente y sus sabores.</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 9 -->
+                <div class="lugar-card" 
+                     data-nombre="Tren Metropolitano"
+                     data-imagen="https://www.opinion.com.bo/asset/thumbnail,992,558,center,center/media/opinion/images/2024/01/07/2024010719102371404.jpg"
+                     data-descripcion="El Tren Metropolitano serpentea a través de hermosos paisajes naturales, permitiendo a los visitantes conectarse con la flora y fauna local. Con diferentes niveles de dificultad, es ideal tanto para caminantes casuales como para excursionistas experimentados."
+                     data-horario="Para la Línea Verde, se reportó salidas desde la Estación Central “San Antonio” a las 6:00, 8:30, 11:00, 13:30, 16:00 y 18:30; y retornos desde Quillacollo a las 7:00, 9:30, 12:00, 14:30, 17:00 y 19:30. "
+                     data-entrada="1bs a 3bs"
+                     data-ubicacion="Es un tren eléctrico/ferro-metro ligero que conecta varios municipios del valle bajo de Cochabamba: los municipios de Cercado (Cochabamba) (la ciudad de Cochabamba), Colcapirhua, Quillacollo, Vinto y Sipe Sipe. "
+                     data-maps="https://maps.app.goo.gl/qCoppEtBLy7DXJ8M8">
+                    <div class="lugar-img">
+                        <img src="https://www.opinion.com.bo/asset/thumbnail,992,558,center,center/media/opinion/images/2024/01/07/2024010719102371404.jpg" alt="Tren Metropolitano">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Tren Metropolitano</h3>
+                        <p>El sistema se llama Tren Metropolitano de Cochabamba, operado bajo el nombre “Mi Tren”. </p>
+                    </div>
+                </div>
+
+                <!-- Lugar 10 -->
+                <div class="lugar-card" 
+                     data-nombre="Machajmarca – Encanto Natural de Vinto"
+                     data-imagen="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp06ReLcH7-ryFPxZB19UtxGnW6RQG-iLhyA&s"
+                     data-descripcion="La Machajmarca – Encanto Natural de Vinto es un espacio vibrante donde los creadores locales exhiben textiles tradicionales hasta innovadoras creaciones contemporáneas, esta plaza celebra la rica tradición artesanal de Vinto."
+                     data-horario="Abierto todos los días, recomendado visitar entre 08:00 y 17:00."
+                     data-entrada="Se encuentra a unos 20 minutos del centro de Vinto. Se puede llegar en vehículo particular o en trufi local que sale desde la zona central del municipio hacia el sur."
+                     data-ubicacion="Centro Histórico de Vinto"
+                     data-maps="https://maps.app.goo.gl/18nqdTf6EB5nXGScA?g_st=aw">
+                    <div class="lugar-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp06ReLcH7-ryFPxZB19UtxGnW6RQG-iLhyA&s" alt="Machajmarca – Encanto Natural de Vinto">
+                    </div>
+                    <div class="lugar-content">
+                        <h3>Machajmarca – Encanto Natural de Vinto</h3>
+                        <p>Machajmarca es una apacible comunidad rural de Vinto rodeada de cerros, ríos y campos cultivados. Su ambiente natural la convierte en un destino ideal para caminatas, paseos ecológicos y fotografía. Es un lugar donde se puede disfrutar del paisaje y la tranquilidad del valle cochabambino.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modal-titulo"></h2>
+                <button class="cerrar-modal" id="cerrar-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-imagen">
+                    <img id="modal-imagen" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <p id="modal-descripcion"></p>
+                    <div class="modal-datos">
+                        <p><strong>Horario:</strong> <span id="modal-horario"></span></p>
+                        <p><strong>Entrada:</strong> <span id="modal-entrada"></span></p>
+                        <p><strong>Ubicación:</strong> <span id="modal-ubicacion"></span></p>
+                    </div>
+                    <a href="#" class="btn btn-maps" id="modal-maps" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GO! VINTO</h3>
+                    <p>Tu guía turística para descubrir los encantos del municipio de Vinto, Bolivia.</p>
+                    <div class="social-links">
+
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="descubre.html">Descubre</a></li>
+                        <li><a href="gastronomia.html">Gastronomía</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Plaza Principal, Vinto, Bolivia</li>
+                        <li><i class="fas fa-phone"></i> +591 73750154</li>
+                        <li><i class="fas fa-envelope"></i> info@govinto.com</li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GO! VINTO - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrip.js"></script>
+    <script src="descubre.js"></script>
+</body>
+</html>
